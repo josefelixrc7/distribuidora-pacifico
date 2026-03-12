@@ -1,4 +1,13 @@
 $(document).ready(function() {
+
+    // Cambiar estilo del navbar al hacer scroll
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 50) {
+            $('#mainNav').addClass('navbar-scrolled');
+        } else {
+            $('#mainNav').removeClass('navbar-scrolled');
+        }
+    });
     // Dibujar en todos los canvas placeholders un fondo marino
     $('.canvas-placeholder').each(function() {
         var canvas = this;
