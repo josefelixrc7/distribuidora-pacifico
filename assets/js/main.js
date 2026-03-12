@@ -90,7 +90,7 @@ $(document).ready(function() {
                         </div>
                     </div>
                     <div class="col-lg-4 text-center text-lg-end mt-4 mt-lg-0">
-                        <img src="/assets/images/logo.png" alt="Distribuidora El Pacifico" class="img-fluid mb-3 text-center" width="250">
+                        <img src="/assets/images/logo.png" alt="Distribuidora El Pacífico" class="img-fluid mb-3 text-center" width="250">
                         <div>
                             <a href="/contacto/" class="btn btn-light btn-lg px-5 py-3 fw-bold rounded-pill shadow">
                                 <i class="fas fa-paper-plane me-2"></i>Contactar ahora
