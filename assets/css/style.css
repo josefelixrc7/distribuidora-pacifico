@@ -290,3 +290,47 @@ h1, h2, h3 {
 .margin-top-custom {
     margin-top: 94px !important; /* Ajusta este valor según el tamaño de tu navbar */
 }
+
+/* Estilos para las nuevas secciones */
+.bg-primary.bg-opacity-10 {
+    background-color: rgba(30, 126, 140, 0.1) !important;
+}
+
+.rounded-4 {
+    border-radius: 1rem !important;
+}
+
+.opacity-90 {
+    opacity: 0.9;
+}
+
+/* Iconos circulares en sección contacto */
+.bg-white.text-primary.p-3 {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.bg-white.text-primary.p-3:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Canvas mejorados */
+.canvas-placeholder.rounded-4 {
+    border: none;
+    box-shadow: 0 20px 30px -10px rgba(0,0,0,0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .display-5 {
+        font-size: 2rem;
+    }
+    .display-6 {
+        font-size: 1.8rem;
+    }
+}
