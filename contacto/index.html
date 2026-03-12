@@ -9,31 +9,44 @@
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <!-- Navbar elegante -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand" href="../index.html"><i class="fas fa-fish"></i> Distribuidora El Pacifico</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/assets/images/logo.png" alt="Distribuidora El Pacifico" class="img-fluid" width="64">
+                <span class="ms-2">Distribuidora El Pacífico, C.A.</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Inicio</a>
+                    </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="productosDropdown" role="button" data-bs-toggle="dropdown">Productos</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="../productos/sardinas-cayuco.html">Sardinas Cayuco</a></li>
-                            <li><a class="dropdown-item" href="../productos/sardinas-pacifico.html">Sardinas Pacifico</a></li>
-                            <li><a class="dropdown-item" href="../productos/atun-pacifico.html">Atún Pacifico</a></li>
-                            <li><a class="dropdown-item" href="../productos/filetes-anchoa-cantabria.html">Filetes de Anchoa Cantabria</a></li>
+                        <a class="nav-link dropdown-toggle" href="#" id="productDropdown" role="button" data-bs-toggle="dropdown">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="productDropdown">
+                            <li><a class="dropdown-item" href="/productos/sardinas-cayuco.html">Sardinas Cayuco</a></li>
+                            <li><a class="dropdown-item" href="/productos/sardinas-pacifico.html">Sardinas Pacifico</a></li>
+                            <li><a class="dropdown-item" href="/productos/atun-pacifico.html">Atún Pacifico</a></li>
+                            <li><a class="dropdown-item" href="/productos/filetes-anchoa-cantabria.html">Filetes de Anchoa Cantabria</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Contacto</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contacto/">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-contact" href="/contacto/">Hablemos</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container my-5">
+    <div class="container my-5 margin-top-custom">
         <h1 class="mb-4">Contacta con nosotros</h1>
         <div class="row">
             <div class="col-md-6">

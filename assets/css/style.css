@@ -286,3 +286,7 @@ h1, h2, h3 {
         color: white;
     }
 }
+
+.margin-top-custom {
+    margin-top: 94px !important; /* Ajusta este valor según el tamaño de tu navbar */
+}
