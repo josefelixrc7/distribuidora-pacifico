@@ -1,0 +1,55 @@
+/* Estilos personalizados para Distribuidora El Pacifico */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.bg-primary {
+    background-color: #1e7e8c !important; /* Azul marino verdoso */
+}
+
+.navbar-brand i {
+    margin-right: 8px;
+}
+
+.canvas-placeholder {
+    background-color: #d4f1f9; /* Fondo de respaldo */
+    border: 2px dashed #1e7e8c;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #05314e !important;
+}
+
+.btn-primary {
+    background-color: #1e7e8c;
+    border-color: #166a76;
+}
+
+.btn-primary:hover {
+    background-color: #166a76;
+    border-color: #0f525c;
+}
+
+.card {
+    transition: transform 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+h1, h2, h3 {
+    color: #05314e;
+}
+
+.text-primary {
+    color: #1e7e8c !important;
+}
