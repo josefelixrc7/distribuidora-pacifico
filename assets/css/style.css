@@ -1,8 +1,12 @@
 /* Estilos personalizados para Distribuidora El Pacifico */
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter', sans-serif;
     color: #333;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand, .nav-link, .btn {
+    font-family: 'Poppins', sans-serif;
 }
 
 .bg-primary {
@@ -149,7 +153,6 @@ h1, h2, h3 {
     display: flex;
     align-items: center;
     color: white;
-    font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 0.5px;
