@@ -56,7 +56,7 @@
 
         <div class="row">
             <div class="col-md-6">
-                <h1>Atún bonito desmenuzado en aceite <span class="text-primary">Marca Pacifico</span></h1>
+                <h1 class="display-5 fw-bold mb-4">Atún bonito desmenuzado en aceite <span class="text-primary">Marca Pacifico</span></h1>
                 <p class="lead">170g de atún claro de alta calidad, desmenuzado y listo para usar.</p>
                 <p>El atún bonito del norte se envasa en aceite de oliva para mantener su sabor suave y textura tierna. Ideal para ensaladas, sandwiches o pizzas.</p>
                 <h4>Características:</h4>
@@ -67,47 +67,35 @@
                 </ul>
             </div>
             <div class="col-md-6">
-                <div class="row g-2">
-                    <div class="col-6"><canvas width="300" height="200" class="canvas-placeholder w-100"></canvas></div>
-                    <div class="col-6"><canvas width="300" height="200" class="canvas-placeholder w-100"></canvas></div>
-                    <div class="col-6"><canvas width="300" height="200" class="canvas-placeholder w-100"></canvas></div>
-                    <div class="col-6"><canvas width="300" height="200" class="canvas-placeholder w-100"></canvas></div>
+                <div id="productCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <!-- Indicadores (puntos) -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    </div>
+                    
+                    <!-- Imágenes del carrusel -->
+                    <div class="carousel-inner rounded-4 shadow">
+                        <div class="carousel-item active">
+                            <img src="/assets/images/asset25.png" class="d-block w-100" alt="Sardinas Pacifico">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/images/asset8.jpeg" class="d-block w-100" alt="Sardinas Pacifico">
+                        </div>
+                    </div>
+                    
+                    <!-- Botones de navegación -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
                 </div>
             </div>
         </div>
-
-        <section class="mt-5">
-            <h2 class="mb-4">Recetas con Atún Pacifico</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <canvas width="300" height="180" class="card-img-top canvas-placeholder"></canvas>
-                        <div class="card-body">
-                            <h5 class="card-title">Ensalada de atún y maíz</h5>
-                            <p class="card-text">Mezcla atún, maíz dulce, lechuga y mayonesa.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <canvas width="300" height="180" class="card-img-top canvas-placeholder"></canvas>
-                        <div class="card-body">
-                            <h5 class="card-title">Pizza de atún</h5>
-                            <p class="card-text">Base de pizza con salsa, atún, cebolla y aceitunas.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <canvas width="300" height="180" class="card-img-top canvas-placeholder"></canvas>
-                        <div class="card-body">
-                            <h5 class="card-title">Empanadillas de atún</h5>
-                            <p class="card-text">Relleno de atún, tomate frito y huevo duro.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
     </div>
 
     <!-- Sección: ¿Hablamos? Call to Action -->

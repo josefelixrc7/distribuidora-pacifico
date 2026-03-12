@@ -102,4 +102,75 @@ $(document).ready(function() {
             </div>
         </section>
     `);
+
+    // Función para dibujar canvas del carrusel con diferentes estilos
+    function drawCarouselCanvases() {
+        // Canvas principales del carrusel
+        $('.canvas-carousel').each(function(index) {
+            var canvas = this;
+            var ctx = canvas.getContext('2d');
+            var w = canvas.width;
+            var h = canvas.height;
+            
+            // Diferentes gradientes según la posición
+            var gradients = [
+                ['#1e7e8c', '#0a2f44'], // Azul oscuro
+                ['#c99e6d', '#b38958'], // Dorado
+                ['#166a76', '#1e7e8c'], // Azul medio
+                ['#0a2f44', '#1e7e8c']  // Azul profundo
+            ];
+            
+            var gradient = ctx.createLinearGradient(0, 0, w, h);
+            gradient.addColorStop(0, gradients[index % gradients.length][0]);
+            gradient.addColorStop(1, gradients[index % gradients.length][1]);
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, w, h);
+            
+            // Dibujar iconos de peces/olas
+            ctx.fillStyle = 'rgba(255,255,255,0.1)';
+            for (var i = 0; i < 10; i++) {
+                var x = Math.random() * w;
+                var y = Math.random() * h;
+                var size = Math.random() * 30 + 10;
+                ctx.beginPath();
+                ctx.arc(x, y, size/2, 0, Math.PI * 2);
+                ctx.fill();
+            }
+            
+            // Dibujar texto del producto
+            ctx.font = 'bold 24px Poppins, sans-serif';
+            ctx.fillStyle = 'rgba(255,255,255,0.3)';
+            ctx.textAlign = 'center';
+            ctx.fillText('🐟', w/2, h/2);
+        });
+        
+        // Miniaturas
+        $('.canvas-thumbnail').each(function(index) {
+            var canvas = this;
+            var ctx = canvas.getContext('2d');
+            var w = canvas.width;
+            var h = canvas.height;
+            
+            var gradient = ctx.createLinearGradient(0, 0, 0, h);
+            gradient.addColorStop(0, '#a8ede0');
+            gradient.addColorStop(1, '#fed6e3');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, w, h);
+            
+            ctx.font = 'bold 16px Poppins, sans-serif';
+            ctx.fillStyle = '#1e7e8c';
+            ctx.textAlign = 'center';
+            ctx.fillText('🔍', w/2, h/2);
+        });
+    }
+
+    // Llamar a la función después de que el documento esté listo
+    $(document).ready(function() {
+        // ... (tu código existente)
+        
+        // Dibujar carruseles
+        drawCarouselCanvases();
+        
+        // Hacer que las miniaturas sean clickeables (Bootstrap ya lo maneja con data-bs-slide-to)
+    });
 });

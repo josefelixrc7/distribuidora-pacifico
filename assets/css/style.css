@@ -334,3 +334,70 @@ h1, h2, h3 {
         font-size: 1.8rem;
     }
 }
+/* Estilos para el carrusel de productos */
+.canvas-carousel {
+    background: linear-gradient(135deg, #1e7e8c, #0a2f44);
+    border-radius: 1rem;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    border-radius: 1rem;
+    padding: 0.8rem 1.5rem;
+    bottom: 20px;
+}
+
+.carousel-indicators {
+    margin-bottom: 0.5rem;
+}
+
+.carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 8%;
+    opacity: 0.8;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* Miniaturas */
+.canvas-thumbnail {
+    background: linear-gradient(135deg, #a8ede0, #fed6e3);
+    border: 2px solid transparent;
+    transition: all 0.3s;
+    cursor: pointer;
+    height: 60px;
+    object-fit: cover;
+}
+
+.canvas-thumbnail:hover {
+    border-color: #1e7e8c;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .carousel-item canvas {
+        height: 250px !important;
+    }
+    
+    .canvas-thumbnail {
+        height: 40px;
+    }
+    
+    .carousel-caption {
+        display: none !important; /* Ocultar en móvil si es necesario */
+    }
+}

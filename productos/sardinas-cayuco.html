@@ -57,7 +57,7 @@
 
         <div class="row">
             <div class="col-md-6">
-                <h1>Sardinas en salsa de tomate / aceite <span class="text-primary">Marca Cayuco</span></h1>
+                <h1 class="display-5 fw-bold mb-4">Sardinas en salsa de tomate / aceite <span class="text-primary">Marca Cayuco</span></h1>
                 <p class="lead">Presentación de 170g. Sardinas seleccionadas en conserva con el auténtico sabor casero.</p>
                 <p>Nuestras sardinas Cayuco se preparan artesanalmente, manteniendo la textura y el sabor del mar. Disponibles en salsa de tomate o en aceite de oliva.</p>
                 <h4>Características:</h4>
@@ -68,48 +68,39 @@
                 </ul>
             </div>
             <div class="col-md-6">
-                <div class="row g-2">
-                    <div class="col-6"><canvas width="300" height="200" class="canvas-placeholder w-100"></canvas></div>
-                    <div class="col-6"><canvas width="300" height="200" class="canvas-placeholder w-100"></canvas></div>
-                    <div class="col-6"><canvas width="300" height="200" class="canvas-placeholder w-100"></canvas></div>
-                    <div class="col-6"><canvas width="300" height="200" class="canvas-placeholder w-100"></canvas></div>
+                <div id="productCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <!-- Indicadores (puntos) -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    
+                    <!-- Imágenes del carrusel -->
+                    <div class="carousel-inner rounded-4 shadow">
+                        <div class="carousel-item active">
+                            <img src="/assets/images/asset3.jpeg" class="d-block w-100" alt="Sardinas Pacifico">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/images/asset4.jpeg" class="d-block w-100" alt="Sardinas Pacifico">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/images/asset12.jpeg" class="d-block w-100" alt="Sardinas Pacifico">
+                        </div>
+                    </div>
+                    
+                    <!-- Botones de navegación -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
                 </div>
             </div>
         </div>
-
-        <!-- Recetas -->
-        <section class="mt-5">
-            <h2 class="mb-4">Recetas con Sardinas Cayuco</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <canvas width="300" height="180" class="card-img-top canvas-placeholder"></canvas>
-                        <div class="card-body">
-                            <h5 class="card-title">Empanadas de sardinas</h5>
-                            <p class="card-text">Rellena empanadas con sardinas, cebolla y pimiento.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <canvas width="300" height="180" class="card-img-top canvas-placeholder"></canvas>
-                        <div class="card-body">
-                            <h5 class="card-title">Ensalada de sardinas con aguacate</h5>
-                            <p class="card-text">Mezcla sardinas, aguacate, tomate cherry y cilantro.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <canvas width="300" height="180" class="card-img-top canvas-placeholder"></canvas>
-                        <div class="card-body">
-                            <h5 class="card-title">Tostas de sardinas y queso fresco</h5>
-                            <p class="card-text">Pan tostado con queso fresco y sardinas en aceite.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
     </div>
 
     <!-- Sección: ¿Hablamos? Call to Action -->
