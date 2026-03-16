@@ -58,7 +58,6 @@ $(document).ready(function() {
                 <div class="row align-items-center">
                     <div class="col-lg-8">
                         <h2 class="display-6 fw-bold mb-3 text-white">¿Tienes un negocio o quieres distribuir nuestros productos?</h2>
-                        <p class="lead mb-4 opacity-90">Estamos buscando alianzas con restaurantes, hoteles y tiendas gourmet. Cuéntanos tu proyecto y te asesoramos.</p>
                         <div class="row g-3">
                             <div class="col-md-4">
                                 <div class="d-flex align-items-center">
@@ -80,10 +79,10 @@ $(document).ready(function() {
                             </div>
                             <div class="col-md-4">
                                 <div class="d-flex align-items-center">
-                                    <i class="fas fa-clock fs-4 me-3 bg-white text-primary p-3 rounded-circle"></i>
+                                    <i class="fab fa-instagram fs-4 me-3 bg-white text-primary p-3 rounded-circle"></i>
                                     <div>
-                                        <small>Horario</small>
-                                        <p class="fw-bold mb-0">Lun-Vie 8am - 6pm</p>
+                                        <small>RRSS</small>
+                                        <p class="fw-bold mb-0">@distribuidorapacifico</p>
                                     </div>
                                 </div>
                             </div>
@@ -102,6 +101,42 @@ $(document).ready(function() {
             </div>
         </section>
     `);
+
+    $('#mainNav').html(`
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/assets/images/logo.png" alt="Distribuidora El Pacífico" class="img-fluid" width="64">
+                <span class="ms-2">Distribuidora El Pacífico, C.A.</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productDropdown" role="button" data-bs-toggle="dropdown">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="productDropdown">
+                            <li><a class="dropdown-item" href="/productos/sardinas-cayuco.html">Sardinas Cayuco</a></li>
+                            <li><a class="dropdown-item" href="/productos/sardinas-pacifico.html">Sardinas Pacífico</a></li>
+                            <li><a class="dropdown-item" href="/productos/atun-pacifico.html">Atún Pacífico</a></li>
+                            <li><a class="dropdown-item" href="/productos/filetes-anchoa-cantabria.html">Filetes de Anchoa Cantabria</a></li>
+                            <li><a class="dropdown-item" href="/productos/harina-pescado-pacifico.html">Harina Pacífico</a></li>
+                            <li><a class="dropdown-item" href="/productos/aceite-pescado-pacifico.html">Aceite Pacífico</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contacto/">Contacto</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    `)
 
     // Función para dibujar canvas del carrusel con diferentes estilos
     function drawCarouselCanvases() {

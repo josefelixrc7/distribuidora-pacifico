@@ -16,47 +16,14 @@
 <body>
     <!-- Navbar elegante -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="/index.html">
-                <img src="/assets/images/logo.png" alt="Distribuidora El Pacífico" class="img-fluid" width="64">
-                <span class="ms-2">Distribuidora El Pacífico, C.A.</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="productDropdown" role="button" data-bs-toggle="dropdown">
-                            Productos
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="productDropdown">
-                            <li><a class="dropdown-item" href="/productos/sardinas-cayuco.html">Sardinas Cayuco</a></li>
-                            <li><a class="dropdown-item" href="/productos/sardinas-pacifico.html">Sardinas Pacífico</a></li>
-                            <li><a class="dropdown-item" href="/productos/atun-pacifico.html">Atún Pacífico</a></li>
-                            <li><a class="dropdown-item" href="/productos/filetes-anchoa-cantabria.html">Filetes de Anchoa Cantabria</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/contacto/">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn-contact" href="/contacto/">Hablemos</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
     </nav>
 
     <!-- Hero Section -->
     <header class="hero-section d-flex align-items-center">
         <div class="container text-center text-white">
-            <h1 class="display-3 hero-title">Frescura del Mar en tu Mesa</h1>
+            <h1 class="display-3 hero-title">La Frescura del Mar en tu Mesa</h1>
             <p class="lead hero-subtitle mb-4">Selección de conservas premium, directo del océano a tu hogar</p>
-            <a href="#productos" class="btn btn-hero btn-lg">Descubre nuestros productos</a>
+            <!--<a href="#productos" class="btn btn-hero btn-lg">Descubre nuestros productos</a>-->
         </div>
         <!-- Canvas como fondo (simula imagen) -->
         <img src="assets/images/asset24.png" id="heroCanvas" class="hero-canvas">
@@ -65,11 +32,11 @@
     <!-- Productos Destacados -->
     <section id="productos" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Nuestros Productos</h2>
+            <h2 class="text-center mb-4 display-5 fw-bold">Nuestros Productos</h2>
             <div class="row g-4">
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="card h-100">
-                        <img src="assets/images/asset4.jpeg" class="card-img-top" alt="Sardinas Cayuco">
+                        <img src="assets/images/sardinas-cayuco.png" class="card-img-top" alt="Sardinas Cayuco">
                         <div class="card-body">
                             <h5 class="card-title">Sardinas Cayuco</h5>
                             <p class="card-text">Sardinas en salsa de tomate 170g o en aceite. Sabor auténtico.</p>
@@ -77,9 +44,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="card h-100">
-                        <img src="assets/images/asset21.jpeg" class="card-img-top" alt="Sardinas Pacífico">
+                        <img src="assets/images/sardinas-pacifico.png" class="card-img-top" alt="Sardinas Pacífico">
                         <div class="card-body">
                             <h5 class="card-title">Sardinas Pacífico</h5>
                             <p class="card-text">Sardinas en salsa de tomate 170g o en aceite. Calidad superior.</p>
@@ -87,9 +54,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="card h-100">
-                        <img src="assets/images/asset25.png" class="card-img-top" alt="Atún Pacífico">
+                        <img src="assets/images/atun-pacifico.png" class="card-img-top" alt="Atún Pacífico">
                         <div class="card-body">
                             <h5 class="card-title">Atún Pacífico</h5>
                             <p class="card-text">Atún bonito desmenuzado en aceite 170g. Ideal para ensaladas.</p>
@@ -97,9 +64,32 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+            </div>
+
+            <div class="row g-4 mt-4">
+                <div class="col-md-4">
                     <div class="card h-100">
-                        <img src="assets/images/asset13.jpeg" class="card-img-top" alt="Filetes de Anchoa Cantabria">
+                        <img src="assets/images/aceite-pacifico.png" class="card-img-top" alt="Aceite Cayuco">
+                        <div class="card-body">
+                            <h5 class="card-title">Sardinas Cayuco</h5>
+                            <p class="card-text">Sardinas en salsa de tomate 170g o en aceite. Sabor auténtico.</p>
+                            <a href="productos/sardinas-cayuco.html" class="btn btn-outline-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="assets/images/harina-pacifico.png" class="card-img-top" alt="Harina Pacífico">
+                        <div class="card-body">
+                            <h5 class="card-title">Sardinas Pacífico</h5>
+                            <p class="card-text">Sardinas en salsa de tomate 170g o en aceite. Calidad superior.</p>
+                            <a href="productos/sardinas-pacifico.html" class="btn btn-outline-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="assets/images/filetes-anchoa-cantabria.png" class="card-img-top" alt="Filetes de Anchoa Cantabria">
                         <div class="card-body">
                             <h5 class="card-title">Filetes de Anchoa Cantabria</h5>
                             <p class="card-text">Filetes de anchoa en aceite, presentaciones de 200g, 500g y 4kg.</p>
@@ -121,7 +111,7 @@
                     <p class="lead mb-4">Procesos artesanales y envasado inmediato para llevar a tu mesa la esencia del océano.</p>
                 </div>
                 <div class="col-md-6">
-                    <img src="assets/images/asset10.jpeg" class="card-img-top rounded" alt="Calidad del Mar">
+                    <img src="assets/images/cocinero.png" class="card-img-top rounded" alt="Calidad del Mar">
                 </div>
             </div>
         </div>
