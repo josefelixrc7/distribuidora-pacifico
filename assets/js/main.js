@@ -51,93 +51,6 @@ $(document).ready(function() {
         ctx.fillText('Canvas', w/2, h/2);
     });
 
-    // Setup section contact
-    $('.section-contact').html(`
-        <section class="py-5 bg-primary text-white" style="background: linear-gradient(135deg, #0a2f44 0%, #1e7e8c 100%);">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-8">
-                        <h2 class="display-6 fw-bold mb-3 text-white">¿Tienes un negocio o quieres distribuir nuestros productos?</h2>
-                        <div class="row g-3">
-                            <div class="col-md-4">
-                                <div class="d-flex align-items-center">
-                                    <i class="fas fa-phone-alt fs-4 me-3 bg-white text-primary p-3 rounded-circle"></i>
-                                    <div>
-                                        <small>Llamanos</small>
-                                        <p class="fw-bold mb-0">+58 212 555 1234</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="d-flex align-items-center">
-                                    <i class="fas fa-envelope fs-4 me-3 bg-white text-primary p-3 rounded-circle"></i>
-                                    <div>
-                                        <small>Escríbenos</small>
-                                        <p class="fw-bold mb-0">ventas@elpacifico.com</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="d-flex align-items-center">
-                                    <i class="fab fa-instagram fs-4 me-3 bg-white text-primary p-3 rounded-circle"></i>
-                                    <div>
-                                        <small>RRSS</small>
-                                        <p class="fw-bold mb-0">@distribuidorapacifico</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 text-center text-lg-end mt-4 mt-lg-0">
-                        <img src="/assets/images/logo.png" alt="Distribuidora El Pacífico" class="img-fluid mb-3 text-center" width="250">
-                        <div>
-                            <a href="/contacto/" class="btn btn-light btn-lg px-5 py-3 fw-bold rounded-pill shadow">
-                                <i class="fas fa-paper-plane me-2"></i>Contactar ahora
-                            </a>
-                        </div>
-                        <p class="mt-3 small opacity-75">Respondemos en menos de 24h</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    `);
-
-    $('#mainNav').html(`
-        <div class="container">
-            <a class="navbar-brand" href="/index.html">
-                <img src="/assets/images/logo.png" alt="Distribuidora El Pacífico" class="img-fluid" width="64">
-                <span class="ms-2 d-none d-md-block">Distribuidora El Pacífico, C.A.</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="productDropdown" role="button" data-bs-toggle="dropdown">
-                            Productos
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="productDropdown">
-                            <li><a class="dropdown-item" href="/productos/sardinas-cayuco.html">Sardinas Cayuco</a></li>
-                            <li><a class="dropdown-item" href="/productos/sardinas-pacifico.html">Sardinas Pacífico</a></li>
-                            <li><a class="dropdown-item" href="/productos/atun-pacifico.html">Atún Pacífico</a></li>
-                            <li><a class="dropdown-item" href="/productos/filetes-anchoa-cantabria.html">Filetes de Anchoa Cantabria</a></li>
-                            <li><a class="dropdown-item" href="/productos/harina-pescado-pacifico.html">Harina Pacífico</a></li>
-                            <li><a class="dropdown-item" href="/productos/aceite-pescado-pacifico.html">Aceite Pacífico</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/contacto/">Contacto</a>
-                    </li>
-                    
-                </ul>
-            </div>
-        </div>
-    `)
-
     // Función para dibujar canvas del carrusel con diferentes estilos
     function drawCarouselCanvases() {
         // Canvas principales del carrusel
@@ -209,3 +122,98 @@ $(document).ready(function() {
         // Hacer que las miniaturas sean clickeables (Bootstrap ya lo maneja con data-bs-slide-to)
     });
 });
+
+function loadNav(src)
+{
+
+    $('#mainNav').html(`
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">
+                <img src="${src}assets/images/logo.png" alt="Distribuidora El Pacífico" class="img-fluid" width="64">
+                <span class="ms-2 d-none d-md-block">Distribuidora El Pacífico, C.A.</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productDropdown" role="button" data-bs-toggle="dropdown">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="productDropdown">
+                            <li><a class="dropdown-item" href="${src}productos/sardinas-cayuco.html">Sardinas Cayuco</a></li>
+                            <li><a class="dropdown-item" href="${src}productos/sardinas-pacifico.html">Sardinas Pacífico</a></li>
+                            <li><a class="dropdown-item" href="${src}productos/atun-pacifico.html">Atún Pacífico</a></li>
+                            <li><a class="dropdown-item" href="${src}productos/filetes-anchoa-cantabria.html">Filetes de Anchoa Cantabria</a></li>
+                            <li><a class="dropdown-item" href="${src}productos/harina-pescado-pacifico.html">Harina Pacífico</a></li>
+                            <li><a class="dropdown-item" href="${src}productos/aceite-pescado-pacifico.html">Aceite Pacífico</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="${src}contacto/">Contacto</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    `);
+}
+
+function loadContactSection(src)
+{
+    // Setup section contact
+    $('.section-contact').html(`
+        <section class="py-5 bg-primary text-white" style="background: linear-gradient(135deg, #0a2f44 0%, #1e7e8c 100%);">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <h2 class="display-6 fw-bold mb-3 text-white">¿Tienes un negocio o quieres distribuir nuestros productos?</h2>
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-phone-alt fs-4 me-3 bg-white text-primary p-3 rounded-circle"></i>
+                                    <div>
+                                        <small>Llamanos</small>
+                                        <p class="fw-bold mb-0">+58 212 555 1234</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-envelope fs-4 me-3 bg-white text-primary p-3 rounded-circle"></i>
+                                    <div>
+                                        <small>Escríbenos</small>
+                                        <p class="fw-bold mb-0">ventas@elpacifico.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="d-flex align-items-center">
+                                    <i class="fab fa-instagram fs-4 me-3 bg-white text-primary p-3 rounded-circle"></i>
+                                    <div>
+                                        <small>RRSS</small>
+                                        <p class="fw-bold mb-0">@distribuidorapacifico</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-center text-lg-end mt-4 mt-lg-0">
+                        <img src="${src}assets/images/logo.png" alt="Distribuidora El Pacífico" class="img-fluid mb-3 text-center" width="250">
+                        <div>
+                            <a href="${src}contacto/" class="btn btn-light btn-lg px-5 py-3 fw-bold rounded-pill shadow">
+                                <i class="fas fa-paper-plane me-2"></i>Contactar ahora
+                            </a>
+                        </div>
+                        <p class="mt-3 small opacity-75">Respondemos en menos de 24h</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    `);
+
+}
