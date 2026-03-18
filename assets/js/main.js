@@ -106,7 +106,7 @@ $(document).ready(function() {
         <div class="container">
             <a class="navbar-brand" href="/index.html">
                 <img src="/assets/images/logo.png" alt="Distribuidora El Pacífico" class="img-fluid" width="64">
-                <span class="ms-2">Distribuidora El Pacífico, C.A.</span>
+                <span class="ms-2 d-none d-md-block">Distribuidora El Pacífico, C.A.</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
                 <span class="navbar-toggler-icon"></span>
