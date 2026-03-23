@@ -128,7 +128,7 @@ function loadNav(src)
 
     $('#mainNav').html(`
         <div class="container">
-            <a class="navbar-brand" href="/index.html">
+            <a class="navbar-brand" href="${src}index.html">
                 <img src="${src}assets/images/logo.png" alt="Distribuidora El Pacífico" class="img-fluid" width="64">
                 <span class="ms-2 d-none d-md-block">Distribuidora El Pacífico, C.A.</span>
             </a>
@@ -178,16 +178,16 @@ function loadContactSection(src)
                                     <i class="fas fa-phone-alt fs-4 me-3 bg-white text-primary p-3 rounded-circle"></i>
                                     <div>
                                         <small>Llamanos</small>
-                                        <p class="fw-bold mb-0">+58 212 555 1234</p>
+                                        <p class="fw-bold mb-0">04123240004</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="d-flex align-items-center">
                                     <i class="fas fa-envelope fs-4 me-3 bg-white text-primary p-3 rounded-circle"></i>
-                                    <div>
+                                    <div class="text-break">
                                         <small>Escríbenos</small>
-                                        <p class="fw-bold mb-0">ventas@elpacifico.com</p>
+                                        <p class="fw-bold mb-0">distribuidoraelpacifico.ventas@gmail.com</p>
                                     </div>
                                 </div>
                             </div>
@@ -216,4 +216,72 @@ function loadContactSection(src)
         </section>
     `);
 
+    // Form validation and submission
+    $('#contact-form').submit(async function(e)
+    {
+        e.preventDefault();
+        
+        // Clear previous notifications
+        $('#notifications').html('');
+        
+        // Basic validation
+        let isValid = true;
+        $(this).find('[required]').each(function() {
+            if (!$(this).val()) {
+                $(this).addClass('is-invalid');
+                isValid = false;
+            } else {
+                $(this).removeClass('is-invalid');
+            }
+        });
+
+        if (!isValid)
+        {
+            showNotification('Por favor complete todos los campos requeridos de manera correcta.', 'warning');
+            return;
+        }
+
+        const submitBtn = $(this).find('button[type="submit"]');
+
+        // Show loading state
+        submitBtn.prop('disabled', true).html('<i class="fas fa-spinner fa-spin"></i> Enviando...');
+        
+        
+        // Prepare form data
+        const nombre = $('#nombre').val();
+        const telefono = $('#telefono').val();
+        const email = $('#email').val();
+        const asunto = $('#asunto').val();
+        const mensaje = $('#mensaje').val();
+        
+        try
+        {
+            const mensaje_w = encodeURIComponent(`
+                Hola, soy ${nombre} (${email}, ${telefono}) y me gustaría contactarlos sobre: ${asunto}.
+                Mi mensaje es: ${mensaje}
+            `);
+            const whatsappUrl = `https://wa.me/584123240004?text=${mensaje_w}`;
+            window.open(whatsappUrl, '_blank');
+            
+            showNotification('Contactando via WhatsApp.', 'success');
+        }
+        catch (error)
+        {
+            //console.error('Error:', error);
+            showNotification('Error de conexión. Por favor intente nuevamente más tarde.', 'warning');
+            location.href="#notifications";
+        }
+        finally
+        {
+            submitBtn.prop('disabled', false).html('Enviar Registro');
+        }
+    });
+
+    // Function to show notifications
+    function showNotification(message, type = 'warning')
+    {
+        const notificationDiv = $('#notifications');
+        notificationDiv.append($(`<div class="alert alert-${type}">${message}</div>`));
+        location.href="#notifications";
+    }
 }
