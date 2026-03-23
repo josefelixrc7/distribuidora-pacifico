@@ -178,6 +178,7 @@ function loadContactSection(src)
                                     <i class="fas fa-phone-alt fs-4 me-3 bg-white text-primary p-3 rounded-circle"></i>
                                     <div>
                                         <small>Llamanos</small>
+                                        <p class="fw-bold mb-0">02943330989</p>
                                         <p class="fw-bold mb-0">04123240004</p>
                                     </div>
                                 </div>
