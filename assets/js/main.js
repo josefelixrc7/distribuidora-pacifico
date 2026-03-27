@@ -170,20 +170,20 @@ function loadContactSection(src)
         <section class="py-5 bg-primary text-white" style="background: linear-gradient(135deg, #0a2f44 0%, #1e7e8c 100%);">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-8">
+                    <div class="col-lg-9">
                         <h2 class="display-6 fw-bold mb-3 text-white">¿Tienes un negocio o quieres distribuir nuestros productos?</h2>
                         <div class="row g-3">
-                            <div class="col-md-4">
+                            <div class="col-md-3">
                                 <div class="d-flex align-items-center">
                                     <i class="fas fa-phone-alt fs-4 me-3 bg-white text-primary p-3 rounded-circle"></i>
-                                    <div>
+                                    <div class="text-break">
                                         <small>Llamanos</small>
-                                        <p class="fw-bold mb-0">02943330989</p>
-                                        <p class="fw-bold mb-0">04123240004</p>
+                                        <p class="fw-bold mb-0">0294-3330989</p>
+                                        <p class="fw-bold mb-0">0412-3240004</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-3">
                                 <div class="d-flex align-items-center">
                                     <i class="fas fa-envelope fs-4 me-3 bg-white text-primary p-3 rounded-circle"></i>
                                     <div class="text-break">
@@ -192,18 +192,27 @@ function loadContactSection(src)
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-3">
                                 <div class="d-flex align-items-center">
                                     <i class="fab fa-instagram fs-4 me-3 bg-white text-primary p-3 rounded-circle"></i>
-                                    <div>
+                                    <div class="text-break">
                                         <small>RRSS</small>
                                         <p class="fw-bold mb-0">@distribuidorapacifico</p>
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-md-3">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-map-marker-alt fs-4 me-3 bg-white text-primary p-3 rounded-circle"></i>
+                                    <div class="text-break">
+                                        <small>Dirección</small>
+                                        <p class="fw-bold mb-0">Carúpano - Edo. Sucre.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 text-center text-lg-end mt-4 mt-lg-0">
+                    <div class="col-lg-3 text-center text-lg-end mt-4 mt-lg-0">
                         <img src="${src}assets/images/logo.png" alt="Distribuidora El Pacífico" class="img-fluid mb-3 text-center" width="250">
                         <div>
                             <a href="${src}contacto/" class="btn btn-light btn-lg px-5 py-3 fw-bold rounded-pill shadow">
