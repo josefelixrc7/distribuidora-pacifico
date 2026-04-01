@@ -206,7 +206,7 @@ function loadContactSection(src)
                                     <i class="fas fa-map-marker-alt fs-4 me-3 bg-white text-primary p-3 rounded-circle"></i>
                                     <div class="text-break">
                                         <small>Dirección</small>
-                                        <p class="fw-bold mb-0">Carúpano - Edo. Sucre.</p>
+                                        <p class="fw-bold mb-0">Carúpano - Edo. Sucre. Venezuela.</p>
                                     </div>
                                 </div>
                             </div>
