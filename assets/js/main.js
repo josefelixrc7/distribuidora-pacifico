@@ -130,7 +130,10 @@ function loadNav(src)
         <div class="container">
             <a class="navbar-brand" href="${src}index.html">
                 <img src="${src}assets/images/logo.png" alt="Distribuidora El Pacífico" class="img-fluid" width="64">
-                <span class="ms-2 d-none d-md-block">Distribuidora El Pacífico, C.A.</span>
+                <div class="ms-2 d-none d-md-block">
+                    <p class="navbar-title">Distribuidora El Pacífico, C.A.</p>
+                    <p class="navbar-rif">RIF: J-40568289-2</p>
+                </div>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
                 <span class="navbar-toggler-icon"></span>
@@ -170,7 +173,7 @@ function loadContactSection(src)
         <section class="py-5 bg-primary text-white" style="background: linear-gradient(135deg, #0a2f44 0%, #1e7e8c 100%);">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-9">
+                    <div class="col-lg-10">
                         <h2 class="display-6 fw-bold mb-3 text-white">¿Tienes un negocio o quieres distribuir nuestros productos?</h2>
                         <div class="row g-3">
                             <div class="col-md-3">
@@ -207,15 +210,16 @@ function loadContactSection(src)
                                     <div class="text-break">
                                         <small>Dirección</small>
                                         <p class="fw-bold mb-0">Carúpano - Edo. Sucre. Venezuela.</p>
+                                        <p class="fw-bold mb-0">RIF: J-40568289-2.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 text-center text-lg-end mt-4 mt-lg-0">
-                        <img src="${src}assets/images/logo.png" alt="Distribuidora El Pacífico" class="img-fluid mb-3 text-center" width="250">
+                    <div class="col-lg-2 text-center text-lg-end mt-4 mt-lg-0">
+                        <img src="${src}assets/images/logo.png" alt="Distribuidora El Pacífico" class="img-fluid mb-3 text-center" width="200">
                         <div>
-                            <a href="${src}contacto/" class="btn btn-light btn-lg px-5 py-3 fw-bold rounded-pill shadow">
+                            <a href="${src}contacto/" class="btn btn-light fw-bold rounded-pill shadow">
                                 <i class="fas fa-paper-plane me-2"></i>Contactar ahora
                             </a>
                         </div>

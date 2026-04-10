@@ -199,6 +199,19 @@ h1, h2, h3 {
     width: 100%;
 }
 
+#mainNav .navbar-title{
+    font-size: 1.2rem !important;
+    font-weight: 700 !important;
+    color: white !important;
+    margin-bottom: 0px !important;
+}
+
+#mainNav .navbar-rif{
+    font-size: 0.9rem !important;
+    font-weight: 300 !important;
+    color: rgba(255,255,255,0.8) !important;
+}
+
 /* Botón de contacto especial */
 #mainNav .navbar-nav .btn-contact {
     background: linear-gradient(135deg, #c99e6d, #b38958);
